@@ -79,11 +79,10 @@ exports.default = gulp.series(
 );
 
 const scripts = () => {
-  return gulp.src("source/js/**/*.js") // возьми файлы js
-    .pipe(terser()) // js минифицированный
-    // .pipe(rename("*.js")) // переименуй файл в "script.min.js"
-    .pipe(gulp.dest("build/js")) // положи этот файл в "build/js"
-    .pipe(sync.stream()) // обнови страницу, как при нажатии на F5
+  return gulp.src("source/js/**/*.js")
+    .pipe(terser())
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream())
 }
 
 exports.scripts = scripts
@@ -110,7 +109,7 @@ const copyImages = () => {
 exports.copyImages = copyImages
 
 const createWebp = () => {
-  return gulp.src("source/img/**/*.{jpg,png}")
+  return gulp.src("source/img/*.{jpg,png}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"))
 }
@@ -133,6 +132,7 @@ const copy = (done) => {
     "source/fonts/*.{woff2,woff}",
     "source/*{.ico, webmanifest}",
     "source/img/**/*.svg",
+    "source/img/**/*.pdf",
     "!source/img/icons/*.svg",
   ], {
     base: "source"

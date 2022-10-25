@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "description": "Portfolio of Sytyakova Alena",
+  "description": "Portfolio of Alena Sytyakova",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
