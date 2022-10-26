@@ -1,0 +1,39 @@
+.promo {
+  padding-top: 285px;
+  height: 1160px;
+  background-image: url('../img/notebook.png'),
+  url('../img/background.jpg');
+  background-position: right 100px, 0 0;
+  background-size:  678px 813px, 100% 1160px;
+  background-repeat: no-repeat;
+}
+.promo p,
+.promo h1 {
+  margin: 0;
+}
+
+.promo p:first-child {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.promo__subtitle {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: $accent-color;
+}
+
+.promo h1 {
+  margin-bottom: 15px;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 53px;
+}
+
+.promo button {
+  font-family: $main-font;
+}
