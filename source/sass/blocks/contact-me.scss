@@ -1,0 +1,67 @@
+.contact-me {
+  display: grid;
+  grid-template-columns: 260px 762px;
+}
+
+.contact-me__social {
+  grid-column: 1/2;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-me__social li {
+  margin-bottom: 22px;
+}
+
+.contact-me__social a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contact-me__social svg {
+  margin-right: 20px;
+}
+
+.contact-me__social span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: $light-gray;
+}
+
+.contact-me__info {
+  position: relative;
+}
+
+.contact-me__info p {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  width: 392px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: $light-gray;
+}
+
+.contact-me__info a {
+  text-decoration: none;
+}
+
+.contact-me__info button{
+  position: absolute;
+  top: 145px;
+  left: 35px;
+  padding: 0;
+  width: 221px;
+  height: 37px;
+  background-color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  border-radius: 0;
+}
+
+
