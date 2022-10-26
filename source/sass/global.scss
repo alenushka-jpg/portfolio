@@ -33,10 +33,12 @@ img {
   height: auto;
 }
 
-.container {
-  padding: 0 100px;
-  margin: 0 auto;
-  max-width: $desktop-width;
+h2 {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 53px;
+  color: $accent-color;
 }
 
 button {
@@ -51,4 +53,10 @@ button {
   text-align: center;
   background-color: inherit;
   cursor: pointer;
+}
+
+.container {
+  padding: 0 100px;
+  margin: 0 auto;
+  max-width: $desktop-width;
 }

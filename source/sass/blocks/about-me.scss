@@ -1,16 +1,12 @@
 .about-me {
   display: grid;
-  grid-template-columns: 590px 330px;
+  grid-template-columns: 600px 330px;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 .about-me h2 {
   margin: 0 0 20px;
-  font-family: $secondary-font;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 53px;
-  color: $accent-color;
 }
 
 .about-me p {

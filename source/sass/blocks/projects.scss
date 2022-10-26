@@ -1,0 +1,54 @@
+.projects h2 {
+  margin-bottom: 20px;
+}
+
+.projects ul {
+  display: grid;
+  grid-template-columns: 518px 518px;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projects li {
+  overflow: hidden;
+  position: relative;
+}
+
+.projects__list a {
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: 0 0 6px 2px rgba($background-color, 0.6);
+  }
+
+  &:hover .projects__info {
+    transform: translateY(0%);
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+
+.projects__list img {
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.projects__info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 29px;
+  color: $light-gray;
+  background-color: rgba($black-basic, 0.6);
+  transition: transform 0.5s;
+  transform: translateY(100%);
+}
