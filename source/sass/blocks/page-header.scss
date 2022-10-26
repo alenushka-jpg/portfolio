@@ -1,0 +1,27 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.page-header img {
+  border-radius: 50%;
+}
+
+.page-header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 595px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-header a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: $light-gray;
+  text-decoration: none;
+}
