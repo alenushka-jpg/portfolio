@@ -1,11 +1,15 @@
 .page-header {
   position: absolute;
   top: 0;
+  width: 100%;
+  padding-top: 15px;
+  z-index: 1;
+}
+
+.page-header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding-top: 15px;
 }
 
 .page-header img {

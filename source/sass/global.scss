@@ -23,6 +23,10 @@ body {
   box-sizing: inherit;
 }
 
+a {
+  color: inherit;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -32,4 +36,19 @@ img {
 .container {
   padding: 0 100px;
   margin: 0 auto;
+  max-width: $desktop-width;
+}
+
+button {
+  padding: 27px 30px;
+  width: 250px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: $main-font;
+  border: 0;
+  border-radius: 10px;
+  text-align: center;
+  background-color: inherit;
+  cursor: pointer;
 }
