@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Podkova";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/podkova-regular.woff2") format("woff2"),
+    url("../fonts/podkova-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Podkova";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/podkova-bold.woff2") format("woff2"),
+    url("../fonts/podkova-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/robotoMono-regular.woff2") format("woff2"),
+    url("../fonts/robotoMono-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/robotoMono-bold.woff2") format("woff2"),
+    url("../fonts/robotoMono-bold.woff") format("woff");
+}
