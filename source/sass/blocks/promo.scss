@@ -9,14 +9,32 @@
   background-repeat: no-repeat;
   opacity: 0.95;
 
-  &::after {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
+    width: 100%;
+  }
+
+  &::before {
+    top: -105px;
+    height: 255px;
+    background: linear-gradient(180deg, rgba($background-color, 0.5) 61.88%, rgba($background-color, 0) 93.09%);
+    transform: rotate(-180deg);
+  }
+
+  &::after{
     bottom: -3px;
     width: 100%;
     height: 255px;
     background-image: linear-gradient(180deg, $background-color 38.14%, rgba($background-color, 0) 100%);
     transform: rotate(-180deg);
+  }
+
+
+  @media (min-width: 1600px) {
+    height: 1312px;
+    background-position: 0 0;
   }
 }
 
