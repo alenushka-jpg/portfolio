@@ -13,6 +13,10 @@
   @media (max-width: $tablet-width) {
     grid-template-columns: 418px 418px;
   }
+
+  @media (max-width: 946px) {
+    grid-template-columns: 418px;
+  }
 }
 
 .projects__list li {

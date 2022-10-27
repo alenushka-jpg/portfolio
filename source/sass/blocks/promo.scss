@@ -34,6 +34,10 @@
   font-size: 32px;
   line-height: 42px;
   color: $accent-color;
+
+  @media (max-width: $mobile-width) {
+    width: 60%;
+  }
 }
 
 .promo h1 {
@@ -48,6 +52,11 @@
   margin-right: 39px;
   color: $background-color;
   background-image: linear-gradient(180deg, $accent-color 0%, $secondary-accent 100%);
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    margin-bottom: 25px;
+  }
 }
 
 .promo___certificates {

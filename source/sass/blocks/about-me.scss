@@ -40,6 +40,10 @@
   @media (max-width: $tablet-width) {
     width: 60%;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 90%;
+  }
 }
 
 .about-me img {
