@@ -7,17 +7,16 @@
   display: grid;
   grid-template-columns: 608px 608px;
   gap: 30px;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
 
-  @media (max-width: $tablet-width) {
-    grid-template-columns: 418px 418px;
+  @media (max-width: $desktop-width) {
+    grid-template-columns: 504px 504px;
   }
 
-  @media (max-width: 946px) {
-    grid-template-columns: 418px;
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 504px;
   }
 }
 
@@ -47,9 +46,9 @@
   border-radius: 10px;
   transition: transform 0.5s;
 
-  @media (max-width: $tablet-width) {
-    width: 418px;
-    height: 183px;
+  @media (max-width: $desktop-width) {
+    width: 504px;
+    height: 274px;
   }
 }
 

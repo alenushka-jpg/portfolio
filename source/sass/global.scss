@@ -59,9 +59,9 @@ button {
 .container {
   padding: 0 100px;
   margin: 0 auto;
-  max-width: $desktop-width;
+  max-width: 1440px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 0 40px;
   }
 }
