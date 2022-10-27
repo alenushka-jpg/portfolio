@@ -1,0 +1,1 @@
+const header=document.querySelector(".page-header"),burger=document.querySelector(".page-header__burger");function showHeader(){header.classList.toggle("page-header--open")}function onHeaderClick(){showHeader()}burger.addEventListener("click",onHeaderClick);
