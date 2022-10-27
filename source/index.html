@@ -7,13 +7,19 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--open">
     <div class="page-header__container container">
       <img src="./img/avatar-logo.png" width="70" height="70" alt="Аватарка">
       <nav class="page-header__navigation">
-        <svg width="48" height="48">
-          <use xlink:href="./img/sprite.svg#menu"></use>
-        </svg>
+        <button class="page-header__burger" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="page-header__burger-svg" width="48" height="48">
+            <use xlink:href="./img/sprite.svg#menu"></use>
+          </svg>
+          <svg class="page-header__x-circle" width="48" height="48">
+            <use xlink:href="./img/sprite.svg#x-circle"></use>
+          </svg>
+        </button>
         <ul class="page-header__list">
           <li>
             <a href="#">Home</a>
@@ -199,5 +205,6 @@
       </p>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>

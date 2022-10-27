@@ -42,7 +42,7 @@ h2 {
   color: $accent-color;
 }
 
-button {
+.button {
   padding: 27px 30px;
   width: 250px;
   font-weight: 700;
@@ -64,6 +64,10 @@ button {
   @media (max-width: $desktop-width) {
     padding: 0 40px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 20px;
+  }
 }
 
 .overlay {
@@ -73,4 +77,17 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgba($black-basic, 0.7);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
