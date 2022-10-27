@@ -1,11 +1,13 @@
 .projects h2 {
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 35px;
 }
 
 .projects__list {
   display: grid;
-  grid-template-columns: 518px 518px;
+  grid-template-columns: 608px 608px;
   gap: 30px;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;

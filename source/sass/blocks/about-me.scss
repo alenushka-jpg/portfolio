@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 600px 330px;
   justify-content: space-between;
-  padding-bottom: 30px;
+  padding-bottom: 85px;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
@@ -22,6 +22,8 @@
 }
 
 .about-me img {
+  padding-top: 20px;
+
   @media (max-width: $tablet-width) {
     width: 262px;
     height: 262px;
@@ -29,7 +31,7 @@
 }
 
 .about-me h2 {
-  margin: 0 0 20px;
+  margin: 0 0 35px;
 }
 
 .about-me p {

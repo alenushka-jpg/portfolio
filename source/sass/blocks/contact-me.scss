@@ -1,6 +1,7 @@
 .contact-me {
   display: grid;
   grid-template-columns: 260px 762px;
+  justify-content: space-between;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
