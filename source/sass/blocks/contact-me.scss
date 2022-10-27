@@ -1,6 +1,10 @@
 .contact-me {
   display: grid;
   grid-template-columns: 260px 762px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contact-me__social {
@@ -44,13 +48,22 @@
   font-size: 16px;
   line-height: 21px;
   color: $light-gray;
+
+  @media (max-width: 1166px) {
+    width: 35%;
+  }
+}
+
+.contact-me__info img {
+  width: 762px;
+  height: 363px;
 }
 
 .contact-me__info a {
   text-decoration: none;
 }
 
-.contact-me__info button{
+.contact-me__info button {
   position: absolute;
   top: 145px;
   left: 35px;

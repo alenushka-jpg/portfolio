@@ -3,6 +3,29 @@
   grid-template-columns: 600px 330px;
   justify-content: space-between;
   padding-bottom: 30px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-me__content {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.about-me__content a {
+  color: $secondary-accent;
+  text-shadow: 0 0.3rem 0.3rem rgba($secondary-accent, 0.25);
+  text-decoration: none;
+}
+
+.about-me img {
+  @media (max-width: $tablet-width) {
+    width: 262px;
+    height: 262px;
+  }
 }
 
 .about-me h2 {
@@ -13,6 +36,10 @@
   font-size: 21px;
   line-height: 29px;
   color: $light-gray;
+
+  @media (max-width: $tablet-width) {
+    width: 60%;
+  }
 }
 
 .about-me img {

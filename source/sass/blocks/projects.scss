@@ -2,16 +2,20 @@
   margin-bottom: 20px;
 }
 
-.projects ul {
+.projects__list {
   display: grid;
   grid-template-columns: 518px 518px;
   gap: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 418px 418px;
+  }
 }
 
-.projects li {
+.projects__list li {
   overflow: hidden;
   position: relative;
 }
@@ -36,6 +40,11 @@
 .projects__list img {
   border-radius: 10px;
   transition: transform 0.5s;
+
+  @media (max-width: $tablet-width) {
+    width: 418px;
+    height: 183px;
+  }
 }
 
 .projects__info {

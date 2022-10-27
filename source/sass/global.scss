@@ -59,6 +59,10 @@ button {
   padding: 0 100px;
   margin: 0 auto;
   max-width: $desktop-width;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 40px;
+  }
 }
 
 .overlay {
