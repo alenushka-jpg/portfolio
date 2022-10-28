@@ -48,6 +48,10 @@
   &:hover img {
     transform: scale(1.1);
   }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+  }
 }
 
 .projects__list img {
@@ -77,15 +81,35 @@
   height: auto;
   padding: 20px;
   text-align: center;
-  font-size: 21px;
-  line-height: 29px;
+  font-size: 18px;
+  line-height: 23px;
   color: $light-gray;
   background-color: rgba($black-basic, 0.8);
+  text-shadow: 0px 2px 4px $black-basic;
   transition: transform 0.5s;
   transform: translateY(100%);
 
   @media (max-width: $mobile-width) {
-    font-size: 16px;
-    line-height: 20px;
+    top: 80px;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: $white-basic;
+    font-size: 14px;
+    line-height: 18px;
+    background: linear-gradient(180deg, rgba($background-color, 0.62) 0%,
+      rgba($background-color, 0.5) 100%, rgba($background-color, 0) 100%);
+    transform: inherit;
+  }
+
+  @media (max-width: 524px) {
+    width: 310px;
+    height: 139px;
+  }
+}
+
+.project__hidden {
+  @media (max-width: 524px) {
+    display: none;
   }
 }
