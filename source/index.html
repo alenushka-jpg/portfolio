@@ -137,12 +137,13 @@
     </section>
     <section class="certificates">
       <div class="overlay"></div>
-      <button class="page-header__burger" type="button">
-        <span class="visually-hidden">Close certificates</span>
-        <svg class="page-header__x-circle" width="48" height="48">
-          <use xlink:href="./img/sprite.svg#x-circle"></use>
-        </svg>
-      </button>
+      <div class="certificates__container container">
+        <button class="certificates__button" type="button">
+          <span class="visually-hidden">Close certificates</span>
+          <svg width="45" height="45">
+            <use xlink:href="./img/sprite.svg#cross-mark"></use>
+          </svg>
+        </button>
         <ul class="certificates__list">
           <li>
             <picture>
@@ -175,6 +176,7 @@
             </picture>
           </li>
         </ul>
+      </div>
     </section>
   </main>
   <footer class="contact-me container" id="contact-me">

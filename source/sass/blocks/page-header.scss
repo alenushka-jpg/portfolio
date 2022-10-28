@@ -27,7 +27,7 @@
       position: absolute;
       display: flex;
       flex-direction: column;
-      padding: 40px 20px;
+      padding: 43px 20px;
       width: 100%;
       left: 0;
       top: 85px;
@@ -99,9 +99,29 @@
 }
 
 .page-header a {
+  position: relative;
+  padding: 0 7px;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
   color: $light-gray;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 5%;
+    display: block;
+    height: 2px;
+    width: 0px;
+    background-color: $light-gray;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+
+  &:hover:after {
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+  }
 }
