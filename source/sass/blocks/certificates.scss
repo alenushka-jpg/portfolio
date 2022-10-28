@@ -18,8 +18,8 @@
 
 .certificates__container {
   position: relative;
-  max-width: 1270px;
-  padding: 82px 15px;
+  max-width: 1315px;
+  padding: 82px 25px;
 
   @media (max-width: $desktop-width) {
     max-width: 820px;
@@ -29,7 +29,7 @@
 
 .certificates__button {
   position: absolute;
-  right: 15px;
+  right: -25px;
   top: 15px;
   width: 45px;
   height: 45px;
@@ -39,11 +39,11 @@
   cursor: pointer;
 
   @media (max-width: $desktop-width) {
-    right: 0;
+    right: -50px;
   }
 
   @media (max-width: $mobile-width) {
-    right: 3px;
+    right: -10px;
   }
 }
 
