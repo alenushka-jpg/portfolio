@@ -10,6 +10,8 @@ html {
 
 body {
   position: relative;
+  height: 100%;
+  width: 100%;
   font-family: $main-font;
   font-size: 14px;
   line-height: 30px;
@@ -77,6 +79,7 @@ h2 {
   width: 100%;
   height: 100%;
   background-color: rgba($black-basic, 0.7);
+  cursor: pointer;
 }
 
 .visually-hidden {
