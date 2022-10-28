@@ -57,4 +57,3 @@ if (overlay) {
 if (overlay) {
   overlay.addEventListener('click', bodyVisible);
 };
-

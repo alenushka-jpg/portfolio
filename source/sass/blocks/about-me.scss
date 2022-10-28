@@ -26,6 +26,7 @@
 
 .about-me img {
   padding-top: 20px;
+  border-radius: 50%;
 
   @media (max-width: $tablet-width) {
     width: 262px;
@@ -57,8 +58,4 @@
     font-size: 15px;
     line-height: 25px;
   }
-}
-
-.about-me img {
-  border-radius: 50%;
 }
