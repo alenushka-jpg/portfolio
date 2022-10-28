@@ -7,18 +7,23 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="page-header page-header--open">
+  <header class="page-header">
     <div class="page-header__container container">
       <img src="./img/avatar-logo.png" width="70" height="70" alt="Аватарка">
       <nav class="page-header__navigation">
         <button class="page-header__burger" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg class="page-header__burger-svg" width="48" height="48">
-            <use xlink:href="./img/sprite.svg#menu"></use>
-          </svg>
-          <svg class="page-header__x-circle" width="48" height="48">
-            <use xlink:href="./img/sprite.svg#x-circle"></use>
-          </svg>
+          <div>
+            <span class="visually-hidden">Open the menu</span>
+            <svg class="page-header__burger-svg" width="48" height="48">
+              <use xlink:href="./img/sprite.svg#menu"></use>
+            </svg>
+          </div>
+          <div>
+            <span class="visually-hidden">Close the menu</span>
+            <svg class="page-header__x-circle" width="48" height="48">
+              <use xlink:href="./img/sprite.svg#x-circle"></use>
+            </svg>
+          </div>
         </button>
         <ul class="page-header__list">
           <li>
@@ -65,7 +70,7 @@
       </div>
       <img src="./img/avatar.png" width="328" height="328" alt="Аватарка">
     </section>
-    <section class="projects container">
+    <section class="projects container" id="projects">
       <h2>Projects</h2>
       <ul class="projects__list">
         <li>
@@ -132,6 +137,12 @@
     </section>
     <section class="certificates">
       <div class="overlay"></div>
+      <button class="page-header__burger" type="button">
+        <span class="visually-hidden">Close certificates</span>
+        <svg class="page-header__x-circle" width="48" height="48">
+          <use xlink:href="./img/sprite.svg#x-circle"></use>
+        </svg>
+      </button>
         <ul class="certificates__list">
           <li>
             <picture>
