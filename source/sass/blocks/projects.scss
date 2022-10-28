@@ -18,6 +18,14 @@
   @media (max-width: $tablet-width) {
     grid-template-columns: 504px;
   }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 403px;
+  }
+
+  @media (max-width: 524px) {
+    grid-template-columns: 310px;
+  }
 }
 
 .projects__list li {
@@ -50,6 +58,16 @@
     width: 504px;
     height: 274px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 403px;
+    height: 174px;
+  }
+
+  @media (max-width: 524px) {
+    width: 310px;
+    height: 139px;
+  }
 }
 
 .projects__info {
@@ -62,7 +80,12 @@
   font-size: 21px;
   line-height: 29px;
   color: $light-gray;
-  background-color: rgba($black-basic, 0.6);
+  background-color: rgba($black-basic, 0.8);
   transition: transform 0.5s;
   transform: translateY(100%);
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

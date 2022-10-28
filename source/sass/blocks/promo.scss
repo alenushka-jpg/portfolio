@@ -18,6 +18,7 @@
     height: 255px;
     background-image: linear-gradient(180deg, $background-color 38.14%, rgba($background-color, 0) 100%);
     transform: rotate(-180deg);
+    z-index: -1;
   }
 
   @media (min-width: 1600px) {
@@ -26,6 +27,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    background-image: url('../img/background-mobile.jpg');
     &::before {
       display: none;
     }
@@ -37,6 +39,10 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
+
+  @media (max-width: 524px) {
+    margin: 0 0 20px;
+  }
 }
 
 .promo__subtitle {
@@ -49,6 +55,12 @@
   @media (max-width: $mobile-width) {
     width: 60%;
   }
+
+  @media (max-width: 524px) {
+    width: 100%;
+    font-size: 25px;
+    line-height: 36px;
+  }
 }
 
 .promo h1 {
@@ -57,6 +69,11 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 53px;
+
+  @media (max-width: 524px) {
+    font-size: 35px;
+    line-height: 24px;
+  }
 }
 
 .promo___resume {
@@ -79,7 +96,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    display: block;
+    display: flex;
     margin-bottom: 25px;
   }
 }

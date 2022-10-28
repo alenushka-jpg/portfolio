@@ -61,11 +61,16 @@
 }
 
 .page-header__burger {
+  display: none;
   padding: 0;
   border: none;
   background-color: inherit;
   cursor: pointer;
   z-index: 50;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
 }
 
 .page-header img {
