@@ -7,11 +7,16 @@
     </g>
     <path fill="#FFF" d="M72.1 81.8c1.1 1.6 32.8 32.6 32.8 32.6s2.3 2.6 4.7.7c2.2-1.7 1-4.3-.2-5.6c-1.2-1.3-29.4-29.3-30.8-30.5c-1.3-1.2-3.9-1.3-5.5-.5s-1.8 2.2-1 3.3z" opacity=".2"/>
   </g>
-</symbol><symbol id="direction" viewBox="0 0 23.92 12.26">
- <g id="Layer_x0020_1">
+</symbol><symbol id="direction-mobile" viewBox="0 0 23.92 12.26">
+<g id="Layer_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <path stroke="#f9d24a" fill="#777A7A" stroke-width="1.21" stroke-miterlimit="22.9256" d="M7.31 0.38c4.81,6.02 6.61,7.67 14.38,10.44 -8.59,1.79 -14.55,0.66 -21.39,-3.21"/>
- </g>
+  <path stroke="#f9d24a" fill="#292A30" stroke-width="1.21" stroke-miterlimit="22.9256" d="M7.31 0.38c4.81,6.02 6.61,7.67 14.38,10.44 -8.59,1.79 -14.55,0.66 -21.39,-3.21"/>
+</g>
+</symbol><symbol id="direction" viewBox="0 0 23.92 12.26">
+<g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path stroke="#f9d24a" fill="#292A30" stroke-width="1.21" stroke-miterlimit="22.9256" d="M7.31 0.38c4.81,6.02 6.61,7.67 14.38,10.44 -8.59,1.79 -14.55,0.66 -21.39,-3.21"/>
+</g>
 </symbol><symbol id="facebook" viewBox="0 0 24 24">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z" fill="white"/>
 </symbol><symbol id="file-pdf" viewBox="0 0 256 256" preserveAspectRatio="xMidYMid meet">
