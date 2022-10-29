@@ -57,3 +57,19 @@ if (overlay) {
 if (overlay) {
   overlay.addEventListener('click', bodyVisible);
 };
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (header.classList.contains('page-header--open')) {
+      evt.preventDefault();
+      header.classList.remove('page-header--open');
+      bodyVisible();
+    }
+    if (certificates.classList.contains('certificates--open')) {
+      evt.preventDefault();
+      certificates.classList.remove('certificates--open');
+      bodyVisible();
+    }
+  }
+});
+
