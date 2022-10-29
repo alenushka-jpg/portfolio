@@ -112,10 +112,12 @@
     padding: 11px 12px 8px;
 
     &::after {
-      right: -19px;
+      right: -18px;
       bottom: -1px;
+      background-image: url("../img/svg/direction-mobile.svg");
       width: 34px;
       height: 14px;
+      transform: rotate(-1deg);
     }
   }
 }
