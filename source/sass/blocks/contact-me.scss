@@ -24,9 +24,31 @@
 }
 
 .contact-me__social a {
+  position: relative;
   display: flex;
   align-items: center;
   text-decoration: none;
+  width: max-content;
+  padding: 0 7px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 5%;
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: $light-gray;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+  }
 }
 
 .contact-me__social svg {

@@ -123,7 +123,8 @@
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     width: 100%;
     left: 0;
     cursor: pointer;
