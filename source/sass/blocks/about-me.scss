@@ -32,6 +32,10 @@
     width: 262px;
     height: 262px;
   }
+
+  @media (max-width: $mobile-width) {
+    object-fit: cover;
+  }
 }
 
 .about-me h2 {
