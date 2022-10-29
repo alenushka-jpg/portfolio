@@ -72,6 +72,7 @@ const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
+  gulp.watch('source/favicon/**', gulp.series(copy, reload));
 }
 
 exports.default = gulp.series(
@@ -90,7 +91,7 @@ exports.scripts = scripts
 // images
 
 const optimizeImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg,pdf}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.mozjpeg({ progressive: true }),
       imagemin.optipng({ optimizationLevel: 3 }),
@@ -102,7 +103,7 @@ const optimizeImages = () => {
 exports.optimizeImages = optimizeImages
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg,pdf}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(gulp.dest("build/img"))
 }
 
@@ -134,6 +135,7 @@ const copy = (done) => {
     "source/img/**/*.svg",
     "source/img/**/*.pdf",
     "!source/img/icons/*.svg",
+    "source/favicon/**",
   ], {
     base: "source"
   })
