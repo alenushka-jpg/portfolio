@@ -58,8 +58,10 @@
 
 .projects__list img {
   transition: transform 0.5s;
+  width: 504px;
+  height: 382px;
 
-  @media (max-width: $desktop-width) {
+  /* @media (max-width: $desktop-width) {
     width: 504px;
     height: 274px;
   }
@@ -72,7 +74,7 @@
   @media (max-width: 524px) {
     width: 290px;
     height: 119px;
-  }
+  }*/
 }
 
 .projects__info {
