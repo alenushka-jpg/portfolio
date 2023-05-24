@@ -51,6 +51,8 @@
   },
   "type": "module",
   "dependencies": {
-    "browser-sync-client": "^2.27.11"
+    "browser-sync-client": "^2.27.11",
+    "chokidar": "^3.5.3",
+    "fsevents": "^2.3.2"
   }
 }

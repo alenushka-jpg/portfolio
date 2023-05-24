@@ -15,6 +15,11 @@
   }
 }
 
+.about-me__content p:last-child {
+  display: flex;
+  align-items: center;
+}
+
 .about-me__content a {
   color: $secondary-accent;
   text-decoration: none;
@@ -23,6 +28,12 @@
   &:focus {
     color: rgba($accent-color, 0.7);
   }
+}
+
+.about-me__location-item {
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
 }
 
 .about-me img {
