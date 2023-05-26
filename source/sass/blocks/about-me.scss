@@ -1,6 +1,6 @@
 .about-me {
   display: grid;
-  grid-template-columns: 600px 330px;
+  grid-template-columns: 655px 330px;
   justify-content: space-between;
   padding-bottom: 85px;
 
@@ -8,6 +8,8 @@
     grid-template-columns: 1fr;
   }
 }
+
+
 
 .about-me__content {
   @media (max-width: $tablet-width) {
@@ -32,15 +34,16 @@
 
 .about-me__location-item {
   margin-right: 5px;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
 }
 
 .about-me img {
-  padding-top: 20px;
+  margin-top: 75px;
   border-radius: 50%;
 
   @media (max-width: $tablet-width) {
+    margin-top: 25px;
     width: 262px;
     height: 262px;
   }
@@ -59,18 +62,12 @@
   line-height: 29px;
   color: $light-gray;
 
-  @media (max-width: $tablet-width) {
-    width: 60%;
-  }
-
   @media (max-width: $mobile-width) {
-    width: 95%;
     font-size: 18px;
     line-height: 27px;
   }
 
   @media (max-width: 524px) {
-    width: 100%;
     font-size: 15px;
     line-height: 25px;
   }

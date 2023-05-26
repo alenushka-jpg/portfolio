@@ -66,18 +66,10 @@ h2 {
 .container {
   padding: 0 100px;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: $desktop-width;
 
-  @media (max-width: $desktop-width) {
-    padding: 0 40px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding: 0 20px;
-  }
-
-  @media (max-width: 524px) {
-    padding: 0 15px;
+  @media (max-width: 1250px) {
+    padding: 0 50px;
   }
 }
 
