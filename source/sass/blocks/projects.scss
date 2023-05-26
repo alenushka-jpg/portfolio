@@ -22,10 +22,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  height: 51vh;
   width: 100%;
   height: 100%;
-  background-color: rgba($black-basic, 0.6);
+  background-color: rgb($black-basic, 0.6);
   border-radius: 10px;
   z-index: 5;
   transform: scale(0);
@@ -48,11 +47,11 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: $white-basic;
   text-align: center;
-  border: 2px solid rgba(#333333,.7);
+  border: 2px solid rgba($night-rider, 0.7);
   border-radius: 10px;
-  background-color: rgba(#111111,.5);
+  background-color: rgba($coal, 0.5);
 
   @media (max-width: $desktop-width) {
     display: flex;
@@ -87,8 +86,8 @@
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  color: #2c2e3f;
-  background-color: #fff;
+  color: $dark-rock;
+  background-color: $white-basic;
   width: 100%;
   height: 68px;
   padding: 15px;
@@ -104,7 +103,7 @@
     color: $white-basic;
     font-size: 14px;
     line-height: 18px;
-    background-image: linear-gradient(180deg, rgba($background-color, 0.62) 0%, rgba($background-color, 0.5) 100%, rgba($background-color, 0) 100%);
+    background-image: linear-gradient(180deg, rgba($charcoal, 0.62) 0%, rgba($charcoal, 0.5) 100%, rgba($charcoal, 0) 100%);
     transform: inherit;
     padding-bottom: 11px;
   }
@@ -124,4 +123,3 @@
     display: none;
   }
 }
-

@@ -10,7 +10,7 @@
     width: 100%;
     top: -105px;
     height: 255px;
-    background-image: linear-gradient(180deg, rgba($background-color, 0.5) 61.88%, rgba($background-color, 0) 93.09%);
+    background-image: linear-gradient(180deg, rgba($charcoal, 0.5) 61.88%, rgba($charcoal, 0) 93.09%);
     z-index: -1;
   }
 }
@@ -18,7 +18,7 @@
 .page-header--open {
   @media (max-width: $mobile-width) {
     .page-header__container {
-      background-color: $background-color;
+      background-color: $charcoal;
       opacity: 0.97;
     }
 
@@ -30,7 +30,7 @@
       width: 100%;
       left: 0;
       top: 85px;
-      background-color: $background-color;
+      background-color: $charcoal;
     }
 
     .page-header__list li {
