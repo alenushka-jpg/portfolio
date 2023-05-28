@@ -5,6 +5,7 @@ const certificatesOpen = document.querySelector('.promo___certificates');
 const certificatesClose = document.querySelector('.certificates__button');
 const overlay = document.querySelector('.overlay');
 const body = document.querySelector('body');
+const promo = document.querySelector('.promo__container');
 
 function bodyHidden() {
   document.body.style.overflowY = 'scroll';
@@ -17,12 +18,12 @@ function bodyVisible() {
 }
 
 //drop-down menu script
-function showHeader() {
+function showMenu() {
   header.classList.toggle('page-header--open');
 };
 
 function onHeaderClick() {
-  showHeader();
+  showMenu();
 };
 
 burger.addEventListener('click', onHeaderClick);
@@ -72,3 +73,53 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
+
+//gsap
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+
+function showHeader() {
+  gsap.from(header, {opacity: 0, delay: 1, y: 30});
+};
+
+function showPromo() {
+  gsap.from(promo, {opacity: 0, delay: 1, y: 30});
+};
+
+setTimeout(showHeader, 300);
+setTimeout(showPromo, 600);
+
+if (ScrollTrigger.isTouch !== 1) {
+  ScrollSmoother.create({
+    wrapper: '.wrapper',
+    content: '.content',
+    smooth: 1.5,
+    effects: true,
+  });
+
+  gsap.fromTo('.promo', {opacity: 1}, {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: '.promo',
+      start: 'center',
+      end: 'bottom',
+      scrub: true,
+    }
+  })
+
+  gsap.fromTo('.about-me', { opacity: 0}, {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: '.about-me',
+      scrub: true,
+    }
+  })
+
+  gsap.fromTo('.projects', { opacity: 0}, {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: '.projects',
+      scrub: true,
+    }
+  })
+};

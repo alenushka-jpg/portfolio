@@ -3,6 +3,7 @@
   grid-template-columns: 655px 330px;
   justify-content: space-between;
   padding-bottom: 85px;
+  padding-top: 30px;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
