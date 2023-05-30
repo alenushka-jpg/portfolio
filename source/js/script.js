@@ -36,7 +36,7 @@ function showCertificates() {
 
 function onCertificatesClick() {
   showCertificates();
-  bodyHidden();
+  // bodyHidden();
 };
 
 function hiddenCertificates() {
@@ -75,7 +75,6 @@ window.addEventListener('keydown', function (evt) {
 });
 
 //gsap
-
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 function showHeader() {
@@ -89,37 +88,41 @@ function showPromo() {
 setTimeout(showHeader, 300);
 setTimeout(showPromo, 600);
 
+
 if (ScrollTrigger.isTouch !== 1) {
-  ScrollSmoother.create({
-    wrapper: '.wrapper',
-    content: '.content',
-    smooth: 1.5,
-    effects: true,
-  });
+  if (!certificates.classList.contains('certificates--open')) {
+    ScrollSmoother.create({
+      wrapper: '.wrapper',
+      content: '.content',
+      smooth: 1.5,
+      effects: true,
+    });
 
-  gsap.fromTo('.promo', {opacity: 1}, {
-    opacity: 0,
-    scrollTrigger: {
-      trigger: '.promo',
-      start: 'center',
-      end: 'bottom',
-      scrub: true,
-    }
-  })
+    gsap.fromTo('.promo', {opacity: 1}, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: '.promo',
+        start: 'center',
+        end: 'bottom',
+        scrub: true,
+      }
+    })
 
-  gsap.fromTo('.about-me', { opacity: 0}, {
-    opacity: 1,
-    scrollTrigger: {
-      trigger: '.about-me',
-      scrub: true,
-    }
-  })
+    gsap.fromTo('.about-me', { opacity: 0}, {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: '.about-me',
+        scrub: true,
+      }
+    })
 
-  gsap.fromTo('.projects', { opacity: 0}, {
-    opacity: 1,
-    scrollTrigger: {
-      trigger: '.projects',
-      scrub: true,
-    }
-  })
+    gsap.fromTo('.projects', { opacity: 0}, {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: '.projects',
+        scrub: true,
+      }
+    })
+  }
+
 };
