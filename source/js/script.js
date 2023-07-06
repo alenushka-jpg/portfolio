@@ -78,7 +78,7 @@ window.addEventListener('keydown', function (evt) {
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 function showHeader() {
-  gsap.from(header, {opacity: 0, delay: 1, y: 30});
+  gsap.from(header, {opacity: 0, delay: 0, y: 30});
 };
 
 function showPromo() {

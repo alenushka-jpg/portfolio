@@ -91,6 +91,7 @@
   &:hover,
   &:focus {
     background-image: linear-gradient(-45deg, $accent-color 0%, $secondary-accent 100%);
+    transition: .5s;
 
     svg {
       fill: rgba($light-gray, 0.75);
@@ -129,6 +130,7 @@
   &:focus {
     background: rgba($light-gray, 0.23);
     color: $white-basic;
+    transition: .5s;
   }
 
   @media (max-width: 524px) {
