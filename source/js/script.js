@@ -86,7 +86,7 @@ function showPromo() {
 };
 
 setTimeout(showHeader, 300);
-setTimeout(showPromo, 600);
+setTimeout(showPromo, 300);
 
 
 if (ScrollTrigger.isTouch !== 1) {
